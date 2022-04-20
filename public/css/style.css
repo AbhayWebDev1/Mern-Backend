@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --main-bg: #2fa0cc;
+    --main-color:#040a06;
+}
+
+html{
+    font-size:62.5%;
+    
+}
+body{
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin:0;
+    
+}
+
+.main_menu{
+    background-color:var(--main-bg);
+}
+.navbar{
+    color:#fff;
+    background-color:var(--main-bg);
+    padding:2rem 0;
+}
+.navbar li{
+  margin-left:2rem;
+}
+.navbar a{
+    color:#fff;
+    font-size:2rem;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color:var(--main-color);
+    font-size:2rem;
+}
+.navbar-toggler{
+    background-color:grey;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation:rot 2s linear infinite;
+    color:var(--main-color);
+}
+
+@keyframes rot {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*  index  */
+.row1{
+    margin-top: 150px;
+    margin-bottom:250px
+    
+}
+.main_header_left{
+    height: 30rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items : flex-start;
+    border:3px solid orange;
+    box-sizing:border-box;
+
+}
+
+.main_header_middle{
+    height: 30rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items : flex-start;
+    border:2px solid orangered;
+    
+}
+
+.main_header_right{
+    height: 30rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items : flex-start;
+    border:2px solid orange;
+    
+}
+
+/* responsive code  */
+
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin: 3rem 0;
+    }
+    .main_header_middle{
+        height: auto;
+        margin: 3rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem 0;
+    }
+}
+
+/* register code */
+
+.col2{
+    margin-top: 100px;
+    background-color:var(--main-bg);
+    border-radius: 10px;
+}
+
+.col3{
+    margin-top: 40px;
+    margin-bottom: 250px;
+    border:2px solid black;
+    background-color: grey;
+    padding:5px;
+}
+
+h1{
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn{
+    margin-left:auto;
+    font-size: 1.5rem;
+    font-weight : bold;
+}
+
+/* Login */
+.text-center {
+    font-size:1.5rem;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+   margin-top:auto;
+   text-align:center;
+   background-color: var(--main-bg);
+}
+footer p{
+    font-size: 2rem;
+    font-weight: bold;
+}   

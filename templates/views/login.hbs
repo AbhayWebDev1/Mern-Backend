@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+   {{>navbar}}
+
+   <!--main header-->
+   <div class = "container-fluid main_header">
+     <div class = "row">
+        <div class = "col-md-10 col-12 mx-auto">
+           
+          <!--Middle Side Div --> 
+          <div class="row ">
+             <div class = "col-md-6 col-12 mx-auto col2">
+               <h1> Welcome To My login Page</h1>
+             </div>
+          </div>
+          <!--Middle Side Div -->
+          <div class="row ">
+            <div class = "col-md-6 col-12 mx-auto col3">
+              <div class = "row">
+                <div class = "col-md-6 col-12 left_header">
+                  <h1>Hello </h1>
+                  <h2>Please Enter The Email And Password</h2>
+  
+                </div>
+              <div class="col-md-6 col-12 right_header">
+            <form action="/login" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label> 
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required name="email">
+            
+                 </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required name="password">
+                </div>
+              
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+              </div>
+              <a href="/register" class="text-center new-account">Create an account</a>
+           </div>
+            </div>
+        </div>
+    </div>  
+ </div>
+</div>
+<!--Footer Code-->
+{{>footer}}
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+ integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+ crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+
+</body>
+</html>
